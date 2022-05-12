@@ -1,3 +1,3 @@
-# js-rdqt2e
+# js-problem-solving
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-rdqt2e)
+solving the javascript problems from beginner to advance.
