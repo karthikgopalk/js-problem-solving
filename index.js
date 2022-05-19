@@ -105,3 +105,48 @@ Expected Output :
 /*12. Write a JavaScript program to get the website URL (loading page).  */
 
 // console.log(document.URL);
+
+//13. Write a JavaScript exercise to create a variable using a user-defined name.
+
+// let user_name = 'abcd';
+// let n = 120;
+// this.user_name = n;
+// console.log(this.user_name);
+// console.log(user_name);
+
+//14. Write a JavaScript exercise to get the extension of a filename.
+
+// let file_name = 'sample.js';
+// console.log(file_name.split('.').pop());
+
+/*15. Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference. */
+
+// const given_number = +prompt('enter the number', 0);
+// const num = given_number <= 13 ? 13 - given_number : given_number - 13 * 2;
+// console.log(num);
+
+//16. Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.
+
+// function sum(a, b) {
+//   return a === b ? (a + b) * 3 : a + b;
+// }
+// console.log(sum(5, 5));
+
+//17. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.
+
+// const given_number = +prompt('enter the number', 0);
+// const num = given_number > 19 ? (given_number - 19) * 3 : 19 - given_number;
+// console.log(num);
+
+//18. Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.
+
+function sum(a, b) {
+  let output = a || b === 50 ? true : false;
+  // if (a || b === 50) {
+  //   output = true;
+  // } else if (a + b === 50) {
+  //   output = true;
+  // }
+  return output;
+}
+console.log(sum(20, 36));
