@@ -140,13 +140,198 @@ Expected Output :
 
 //18. Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.
 
-function sum(a, b) {
-  let output = a || b === 50 ? true : false;
-  // if (a || b === 50) {
-  //   output = true;
-  // } else if (a + b === 50) {
-  //   output = true;
-  // }
-  return output;
-}
-console.log(sum(20, 36));
+// function sum(a, b) {
+//   if (a == 50 || b == 50 || a + b === 50) return true;
+//   return false;
+// }
+// console.log(sum(20, 50));
+
+//20. Write a JavaScript program to check from two given integers, whether one is positive and another one is negative.
+
+// function checkNumber(a, b) {
+//   let c1 = a < 0 ? false : true;
+//   let c2 = b < 0 ? false : true;
+//   return `a is ${c1} and b is ${c2}`;
+// }
+// console.log(checkNumber(-5, -5));
+
+//21. Write a JavaScript program to create a new string adding "Py" in front of a given string. If the given string begins with "Py" then return the original string.
+
+// function checkInput(input) {
+//   if (input.substring(0, 2) == 'py') return input;
+//   return 'py' + input;
+// }
+// console.log(checkInput(''));
+
+//22. Write a JavaScript program to remove a character at the specified position of a given string and return the new string.
+
+// function specificPos(string_val, position) {
+//   let p1 = string_val.substring(0, position);
+//   let p2 = string_val.substring(position + 1, string_val.length);
+//   return p1 + p2;
+// }
+// console.log(specificPos('hello', 3));
+
+//23. Write a JavaScript program to create a new string from a given string changing the position of first and last characters. The string length must be greater than or equal to 1.
+
+// function changingPosition(input) {
+//   let mid_string = input.substring(1, input.length - 1);
+//   return input.charAt(input.length - 1) + mid_string + input.charAt(0);
+// }
+// console.log(changingPosition('hello'));
+
+//24. Write a JavaScript program to create a new string from a given string with the first character of the given string added at the front and back.
+
+// function addStringfb(input) {
+//   const first_letter = input.charAt(0);
+//   return first_letter + input + first_letter;
+// }
+// console.log(addStringfb('a'));
+
+//25.Write a JavaScript program to check whether a given positive number is a multiple of 3 or a multiple of 7.
+
+// function mulThreeSeven(input) {
+//   if (input > 0) {
+//     if (input % 3 == 0) return 'it is divisible by 3';
+//     if (input % 7 == 0) return 'it is divisible by 7';
+//     return 'it is not divisible by both';
+//   }
+//   return 'please enter positive number';
+// }
+// console.log(mulThreeSeven(-3));
+
+//26. Write a JavaScript program to create a new string from a given string taking the last 3 characters and added at both the front and back. The string length must be 3 or more.
+
+// function newString(input) {
+//   if (input.length > 3) {
+//     const last_three = input.substring(input.length - 3);
+//     return last_three + input + last_three;
+//   }
+//   return input;
+// }
+// console.log(newString('hel'));
+
+//27. Write a JavaScript program to check whether a string starts with 'Java' and false otherwise.
+
+// function stringStarts(input) {
+//   return input.substring(0, 4) == 'Java' ? true : false;
+// }
+// console.log(stringStarts('JavaScript'));
+
+//28. Write a JavaScript program to check whether two given integer values are in the range 50..99 (inclusive). Return true if either of them are in the said range.
+
+// function range(a, b) {
+//   for (let i = 50; i < 99; i++) {
+//     console.log(i);
+//     if (a == i || b == i) {
+//       return 'it is in range';
+//     } else if (i == 98 && a != i && b !== i) return 'nothing is a range';
+//   }
+// }
+// console.log(range(5, 99));
+
+// function checkNumber(a, b) {
+//   if ((a >= 50 && a <= 99) || (b >= 50 && b <= 99)) return true;
+//   return false;
+// }
+// console.log(checkNumber(15, 36));
+
+//30. Write a JavaScript program to check whether a string "Script" presents at 5th (index 4) position in a given string, if "Script" presents in the string return the string without "Script" otherwise return the original one.
+
+// function checkScript(input) {
+//   if (input.length < 6) return 'it is not a valid input';
+//   if (input.substring(4, 10) == 'Script') return input.split('Script').join('');
+//   return input;
+// }
+// console.log(checkScript('javaScript'));
+
+//31. Write a JavaScript program to find the largest of three given integers.
+
+// function findLargest(a, b, c) {
+//   if (a > b && a > c) return 'a is greater';
+//   else if (b > c && b > a) return 'b is greater';
+//   else if (c > a && c > b) return 'c is greater';
+//   return 'all are equal';
+// }
+// console.log(findLargest(55, 55, 55));
+
+//32. Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
+
+// function nearest100(a, b) {
+//   return 100 - a < 100 - b ? 'a is greater' : 'b is greater';
+// }
+// console.log(nearest100(80, 70));
+
+//33. Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
+
+// function checkRange(a, b) {
+//   let result_a, result_b;
+//   if (a >= 40 && a <= 60) result_a = 'a is a range between 40 to 60';
+//   else if (a >= 70 && a <= 100) result_a = 'a is a range between 70 to 100';
+//   if (b >= 40 && b <= 60) result_b = 'b is a range between 40 to 60';
+//   else if (b >= 70 && b <= 100) result_b = 'b is a range between 70 to 100';
+//   return result_a + ' and ' + result_b;
+// }
+// console.log(checkRange(90, 80));
+
+//35. Write a program to check whether a specified character exists within the 2nd to 4th position in a given string.
+
+// function checkChar(input, check) {
+//   return input.substring(2, 5).search(check) != -1 ? true : false;
+// }
+// console.log(checkChar('abcdef', 'cde'));
+
+//37. Write a JavaScript program to create new string with first 3 characters are in lower case from a given string. If the string length is less than 3 convert all the characters in upper case.
+
+// function lowerUpper(input) {
+//   if (input.length < 3) return input.toUpperCase();
+//   const mid_string = input.substring(3, input.length);
+//   return input.substring(0, 3).toLowerCase() + mid_string;
+// }
+// console.log(lowerUpper('ASDGHJGFHG'));
+
+//48. Write a JavaScript program to reverse a given string.
+
+// function reverseStrinng(input) {
+//   return Array.from(input).sort().join('');
+// }
+// console.log(reverseStrinng('helloa'));
+
+//49. Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.
+
+// function replaceString(input) {
+//   let arr = [];
+//   let alphabets = ['a', 'e', 'i', 'o', 'u'];
+//   for (let i = 0; i < input.length; i++) {
+//     const charCode = input.charCodeAt(i) + 1;
+//     let fromCharCode = String.fromCharCode(charCode);
+//     let checkCase =
+//       fromCharCode.includes('a') ||
+//       fromCharCode.includes('e') ||
+//       fromCharCode.includes('i') ||
+//       fromCharCode.includes('o') ||
+//       fromCharCode.includes('u')
+//         ? fromCharCode.toUpperCase()
+//         : fromCharCode;
+//     arr.push(checkCase);
+//   }
+//   return arr.join('');
+// }
+// console.log(replaceString('hello'));
+
+//50. Write a JavaScript program to capitalize the first letter of each word of a given string.
+
+// function capsForSingleWord(input) {
+//   return input.substring(0, 1).toUpperCase() + input.substring(1, input.length);
+// }
+// console.log(capsForSingleWord('tree'));
+
+// function capsForMultiWord(input) {
+//   let splitValue = input.split(' ');
+//   for (let j = 0; j < splitValue.length; j++) {
+//     splitValue[j] =
+//       splitValue[j].charAt(0).toUpperCase() + splitValue[j].substr(1);
+//   }
+//   return splitValue.join(' ');
+// }
+// console.log(capsForMultiWord('tree is beautiful'));
