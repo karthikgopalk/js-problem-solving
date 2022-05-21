@@ -335,3 +335,25 @@ Expected Output :
 //   return splitValue.join(' ');
 // }
 // console.log(capsForMultiWord('tree is beautiful'));
+
+//51. Write a JavaScript program to convert a given number to hours and minutes.
+
+// let num = 450;
+// let date = new Date();
+// let hours = date.setHours(Math.floor(num / 60));
+// let min = date.setMinutes(num % 60);
+// console.log(date.getHours() + ':' + date.getMinutes());
+
+//52. Write a JavaScript program to convert the letters of a given string in alphabetical order.
+
+// function alphabet(input) {
+//   return console.log([...input].sort().join(''));
+// }
+// alphabet('qwerty');
+
+//53. Write a JavaScript program to check whether the characters a and b are separated by exactly 3 places anywhere (at least once) in a given string.
+
+// let input = 'chainsbreak';
+// if (input.substring(input.indexOf('a'), input.indexOf('b' + 1)).length === 5)
+//   return true;
+// else return false;
