@@ -31,11 +31,13 @@
 // }
 // console.log(arr.join(''));
 
-console.log(navigator.platform);
-console.log(navigator.userAgent);
-console.log(location.href);
-console.log(location.hostname);
-alert(location.href); // shows current URL
-if (confirm('Go to Wikipedia?')) {
-  location.href = 'https://wikipedia.org'; // redirect the browser to another URL
-}
+// console.log(navigator.platform);
+// console.log(navigator.userAgent);
+// console.log(location.href);
+// console.log(location.hostname);
+// alert(location.href); // shows current URL
+// if (confirm('Go to Wikipedia?')) {
+//   location.href = 'https://wikipedia.org'; // redirect the browser to another URL
+// }
+
+document.body.style.backgroundColor = 'red';
