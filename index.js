@@ -1,43 +1,38 @@
-//81. Write a JavaScript program to add two digits of a given positive integer of length two.
+//compare two array values are equal
 
-// const input = 852;
-// const output = input
-//   .toString()
-//   .split('')
-//   .reduce((acc, cur) => parseInt(acc) + parseInt(cur));
-// console.log(output);
+// let array1 = ['a', 'b', 'c', 'x'];
+// let array2 = ['z', 'y', 'i'];
+// return false
 
-//83. Write a JavaScript to find the longest string from a given array of strings.
+// let array1 = ['a', 'b', 'c', 'x'];
+// let array2 = ['z', 'y', 'x'];
+// return true
 
-// const arr = ['a', 'aa', 'aaaaaa', 'aaaa', 'aaaaa'];
-// let greater = 0;
-// let value;
-// for (let val of arr) {
-//   if (greater < val.length) {
-//     greater = val.length;
-//     value = val;
+/*
+1. for loop for array1
+2. nested for loop for array2
+3. if charat of array1 equals array2 then true else false
+*/
+
+// function compareArray(array1, array2) {
+//   for (let input1 = 0; input1 <= array1.length - 1; input1++) {
+//     for (let input2 = 0; input2 <= array2.length - 1; input2++) {
+//       if (array1[input1] == array2[input2]) return true;
+//     }
+//   }
+//   return false;
+// }
+// console.log(compareArray(array1, array2));
+
+//another solution//
+
+// for (let index of array1) {
+//   for (let i2 of array2) {
+//     if (index == i2) console.log(index);
 //   }
 // }
-// console.log(value, arr.indexOf(value), greater);
 
-//84. Write a JavaScript to replace each character of a given string by the next one in the English alphabet.
+//another solution//
 
-// const input = 'abcdxyz';
-// let arr = [];
-// let output;
-// for (let val of input) {
-//   output = String.fromCharCode(input.charCodeAt(input.indexOf(val)) + 1);
-//   arr.push(output);
-// }
-// console.log(arr.join(''));
-
-// console.log(navigator.platform);
-// console.log(navigator.userAgent);
-// console.log(location.href);
-// console.log(location.hostname);
-// alert(location.href); // shows current URL
-// if (confirm('Go to Wikipedia?')) {
-//   location.href = 'https://wikipedia.org'; // redirect the browser to another URL
-// }
-
-document.body.style.backgroundColor = 'red';
+// console.log(array1.some((val) => array2.includes(val)));
+// console.log(array1.find((val) => array2.includes(val)));
